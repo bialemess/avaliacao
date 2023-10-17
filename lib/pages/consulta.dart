@@ -59,17 +59,15 @@ class _ConsultaPageState extends State<ConsultaPage> {
                  
               ElevatedButton.icon(
                   onPressed: () {
-                    setState(() {
-                      taref.limparLista();
 
-
-                      
+              taref.limparLista();
+              filteredlist.clear();
+                    
+                   
                 
                     setState(() {
-                      taref.limpar();
-
-
-                    });
+                  
+                    
                     });
                   },
                   icon: const Icon(Icons.delete_forever),

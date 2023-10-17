@@ -28,21 +28,14 @@ class TarefaController with ChangeNotifier {
 
   concluir(Tarefa tarefa) {}
 
-  void limpar() {
-    _tarefas.remove(_tarefas);
-    notifyListeners();
-  }
+
 
   void limparLista() {
     _tarefas.clear();
     notifyListeners();
   }
 
-   void limparlista(){
-    _tarefas=[];
-    notifyListeners();
-  }
-
+ 
 }
 
 const tarefasExemplo = [
